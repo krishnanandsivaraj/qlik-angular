@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as pckg from '../../package.json';
 
 @Component({
   selector: 'ibm-root',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  angular = (<any>pckg).dependencies['@angular/core'];
+    qdtComponents = (<any>pckg).dependencies['qdt-components'];
 }
