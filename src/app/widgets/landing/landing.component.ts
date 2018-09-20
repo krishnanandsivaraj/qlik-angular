@@ -20,7 +20,25 @@ export class LandingComponent implements OnInit {
 		props: {
 			type: 'barchart', id: 'aCCYH', height: '300px',
 		},
-    };
+		};
+		
+		viz3 = {
+			type: 'QdtViz',
+			props: {
+				type: 'barchart', id: 'VfME', height: '300px',
+			},
+			};
+
+			viz4 = {
+				type: 'QdtCurrentSelections',
+				props: { height: '40px' },
+		};
+		viz5 = {
+				type: 'QdtViz',
+				props: {
+				type: 'QdtViz', id: 'PEpsmp', height: '300px',
+				},
+		};
   
   ngOnInit() {
   }
