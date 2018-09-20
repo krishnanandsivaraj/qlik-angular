@@ -39,6 +39,13 @@ export class LandingComponent implements OnInit {
 				type: 'QdtViz', id: 'PEpsmp', height: '300px',
 				},
 		};
+
+		viz6 = {
+			type: 'QdtViz',
+			props: {
+					type: 'QdtViz', id: 'KfpVb', height: '300px',
+			},
+	};
   
   ngOnInit() {
   }
