@@ -9,20 +9,27 @@ import { HighlightJsService } from 'angular2-highlight-js';
 export class LandingComponent implements OnInit {
 
 	constructor(private el: ElementRef, private service : HighlightJsService) { }
-  viz1 = {
-		type: 'QdtSelectionToolbar',
+
+	OverAllProgress={
+		type: 'QdtViz',
 		props: {
-			type: 'QdtSelectionToolbar', id:'VfME', height: '300px',
+			type: 'QdtViz', id: 'RJZZ', height: '300px'
+		},
+	}
+  SelectionToolbar = {
+		type: 'QdtCurrentSelections',
+		props: {
+			height: 'auto'
 		},
 	};
-	viz2 = {
+	DataCollectionProgress = {
 		type: 'QdtViz',
 		props: {
 			type: 'barchart', id: 'aCCYH', height: '300px',
 		},
 		};
 		
-		viz3 = {
+		discoveryData = {
 			type: 'QdtViz',
 			props: {
 				type: 'barchart', id: 'VfME', height: '300px',
@@ -33,19 +40,40 @@ export class LandingComponent implements OnInit {
 				type: 'QdtCurrentSelections',
 				props: { height: '40px' },
 		};
-		viz5 = {
+		projectTimeline = {
 				type: 'QdtViz',
 				props: {
 				type: 'QdtViz', id: 'PEpsmp', height: '300px',
 				},
 		};
 
-		viz6 = {
+		reviewDocuments = {
 			type: 'QdtViz',
 			props: {
 					type: 'QdtViz', id: 'KfpVb', height: '300px',
 			},
 	};
+
+	reviewNotes = {
+		type: 'QdtViz',
+		props: {
+				type: 'QdtViz', id: 'cMmmszS', height: '300px',
+		},
+};
+
+	ibmPoc = {
+		type: 'QdtViz',
+		props: {
+				type: 'QdtViz', id: 'PewWDf', height: '300px',
+		},
+};
+
+deloittePoc = {
+	type: 'QdtViz',
+	props: {
+			type: 'QdtViz', id: 'QjXdRv', height: '300px',
+	},
+};
   
   ngOnInit() {
   }

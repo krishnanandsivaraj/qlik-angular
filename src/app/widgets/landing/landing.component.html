@@ -1,39 +1,211 @@
 <div class="row">
-        <div class="col-md-12">
-            <qdt-component [Component]="viz4.type" [props]="viz4.props"></qdt-component>
+        <div class="col-md-12 padding0">
+                <qdt-component [Component]="SelectionToolbar.type" [props]="SelectionToolbar.props"></qdt-component>  
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <qdt-component [Component]="viz5.type" [props]="viz5.props"></qdt-component>
+    <div class="row filtersRow">
+        <div class="col-md-2">
+                
+                <!-- <simple-object object-class="filterObject" object-id="ucvaSJw"></simple-object> -->
         </div>
-    </div>  
-  
+        <div class="col-md-2">
+                
+                <!-- <simple-object object-class="filterObject" object-id="sjXxhLZ"></simple-object> -->
+        </div>
+        <div class="col-md-2 col-md-offset-6">
+                <a ng-href="https://strueview2.deloitte.com/#/my-inspections/selfAssessment/inspections" target="_blank" class="btn btn-primary">Data Submission Portal <i class="fa fa-external-link"></i></a>
+        </div>
+    </div>
+    <div class="container-fluid" id="viewWrap">
+<div class="row">
+                <div class="col-md-3">
+                <div div class="panel">
 
-  <div class="row">
-    <div class="col-md-12">
-        <qdt-component [Component]="viz1.type" [props]="viz1.props"></qdt-component>
+                              
+                                    <div class="panel-body viz-panel-body">
+                                                <qdt-component [Component]="DataCollectionProgress.type" [props]="DataCollectionProgress.props"></qdt-component>
+                                    </div>
+                            
+                                    <div class="chart-icons text-right">
+                                        <div class="left-btns">
+                                                <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                        </div>
+                                            
+                                        <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                        </div> -->
+                                    </div>
+                            </div>
+                            <div div class="panel">
+
+                              
+                                        <div class="panel-body viz-panel-body">
+                                                    <qdt-component [Component]="OverAllProgress.type" [props]="OverAllProgress.props"></qdt-component>
+                                        </div>
+                                
+                                        <div class="chart-icons text-right">
+                                            <div class="left-btns">
+                                                    <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                    <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                            </div>
+                                                
+                                            <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                    <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                            </div> -->
+                                        </div>
+                                </div>
+                </div>
+        <div class="col-sm-9">
+                        <div div class="panel">
+
+                              
+                                        <div class="panel-body viz-panel-body">
+                                                    <qdt-component [Component]="projectTimeline.type" [props]="projectTimeline.props"></qdt-component>
+                                        </div>
+                                
+                                        <div class="chart-icons text-right">
+                                            <div class="left-btns">
+                                                    <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                    <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                            </div>
+                                                
+                                            <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                    <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                            </div> -->
+                                        </div>
+                                </div>  
+
+                                <div div class="panel">
+
+                              
+                                                <div class="panel-body viz-panel-body">
+                                                            <qdt-component [Component]="discoveryData.type" [props]="discoveryData.props"></qdt-component>
+                                                </div>
+                                        
+                                                <div class="chart-icons text-right">
+                                                    <div class="left-btns">
+                                                            <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                            <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                                    </div>
+                                                        
+                                                    <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                            <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                                    </div> -->
+                                                </div>
+                                        </div>  
+        </div>
+
+        <div class="col-sm-6">
+                        <div div class="panel">
+
+                              
+                                        <div class="panel-body viz-panel-body">
+                                                    <qdt-component [Component]="reviewDocuments.type" [props]="reviewDocuments.props"></qdt-component>
+                                        </div>
+                                
+                                        <div class="chart-icons text-right">
+                                            <div class="left-btns">
+                                                    <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                    <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                            </div>
+                                                
+                                            <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                    <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                            </div> -->
+                                        </div>
+                                </div>  
+
+        </div>
+
+        <div class="col-sm-6">
+                        <div div class="panel">
+
+                              
+                                        <div class="panel-body viz-panel-body">
+                                                    <qdt-component [Component]="reviewNotes.type" [props]="reviewNotes.props"></qdt-component>
+                                        </div>
+                                
+                                        <div class="chart-icons text-right">
+                                            <div class="left-btns">
+                                                    <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                    <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                            </div>
+                                                
+                                            <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                    <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                            </div> -->
+                                        </div>
+                                </div>  
+
+        </div>
+        <div class="col-sm-6">
+                        <div div class="panel">
+
+                              
+                                        <div class="panel-body viz-panel-body">
+                                                    <qdt-component [Component]="ibmPoc.type" [props]="ibmPoc.props"></qdt-component>
+                                        </div>
+                                
+                                        <div class="chart-icons text-right">
+                                            <div class="left-btns">
+                                                    <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                    <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                            </div>
+                                                
+                                            <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                    <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                            </div> -->
+                                        </div>
+                                </div>  
+
+        </div>
+        <div class="col-sm-6">
+                        <div div class="panel">
+
+                              
+                                        <div class="panel-body viz-panel-body">
+                                                    <qdt-component [Component]="deloittePoc.type" [props]="deloittePoc.props"></qdt-component>
+                                        </div>
+                                
+                                        <div class="chart-icons text-right">
+                                            <div class="left-btns">
+                                                    <button class="btn btn-chart" (click)="export()"><i class="fa fa-download"></i></button>
+                                                    <button class="btn btn-chart hidden-xs" (click)="expand()"><i class="fa fa-expand"></i></button>
+                                            </div>
+                                                
+                                            <!-- <div class="chart-cta pull-right" ng-if="so.externalUrl">
+                                                    <a ng-href="{{so.externalUrl}}" target="_blank" class="btn btn-primary">{{so.linkLabel}} <i class="fa fa-external-link"></i></a>
+                                            </div> -->
+                                        </div>
+                                </div>  
+
+        </div>
+        <!-- <div class="col-sm-4">
+          
+        </div> -->
+        <!-- <div class="col-sm-4">
+                <qdt-component [Component]="DataCollectionProgress.type" [props]="DataCollectionProgress.props"></qdt-component>
+        </div> -->
     </div>
 </div>
-
-<div class="row">
-    <div class="col-md-12">
-        <qdt-component [Component]="viz2.type" [props]="viz2.props"></qdt-component>
-    </div>
-</div>
-
-<div class="row">
-        <div class="col-md-12">
-            <qdt-component [Component]="viz3.type" [props]="viz3.props"></qdt-component>
-        </div>
-    </div>
-
-    <div class="row">
-            <div class="col-md-12">
-                <qdt-component [Component]="viz6.type" [props]="viz6.props"></qdt-component>
-            </div>
+    <!-- <div class="row">
+        <div class="col-md-4">
+            <doc-list></doc-list>
         </div>
         
+        <div class="col-md-4">
+                <sense-object qlik-title="Review Notes" qlik-id="HXKP"></sense-object>  
+        </div>
     
-
-     
+        <div class="col-md-4">
+                <simple-table user-field="IBM_User_Name" title-field="user_Title" email-field="IBM_Contact_Email" title="IBM Point of Contact"></simple-table>
+    
+                <simple-table user-field="Deloitte_User_Name" title-field="_Deloitte_user_Title" email-field="Deloitte_Email_Key" title="Deloitte Point of Contact"></simple-table>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+                <sense-object qlik-id="PEpsmp"></sense-object>
+        </div>
+    </div> -->
